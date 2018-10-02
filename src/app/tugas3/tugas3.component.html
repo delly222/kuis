@@ -1,0 +1,9 @@
+<button 
+  class="btn btn-primary" 
+  (click)="onClickMe()">tampilkan detail</button>
+  <p>{{kalimat}}</p>
+<div *ngFor="let panjang of log"
+    [ngStyle]="{'backgroundColor': panjang>=5 ? 'blue' : 'white'}"
+    [ngClass]="{'lima': panjang>=5 ? true : false}">
+   {{ panjang }}
+</div>

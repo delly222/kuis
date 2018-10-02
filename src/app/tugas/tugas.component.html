@@ -1,0 +1,30 @@
+<!-- <p>
+  tugas works!
+</p> -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1> {{ title }} </h1>
+      <hr/>
+    </div>
+  </div>
+</div>
+<!-- <p>
+  servers works!
+</p> -->
+<label>username</label>
+<!-- <input type="text"
+  class="form-control"
+  (input)="onUpdateServer($event)"> -->
+<input type="text"
+  class="form-control"
+  [(ngModel)]="serverName">
+  <p>{{serverName}}</p>
+  
+<button
+  class="btn btn-primary" 
+  [disabled]="!allowNewServer"
+  (click)="onCreationStatus()">Add</button>
+  <p>{{serverCreationStatus}}</p>
+<app-server></app-server>
+<app-server></app-server>
